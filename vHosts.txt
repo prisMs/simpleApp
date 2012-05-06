@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerName 50-56-202-236.static.cloud-ips.com
+    DocumentRoot /root/webapps/tester/public
+    <Directory /root/webapps/tester/public>
+        Allow from all
+        Options -MultiViews
+    </Directory>
+</VirtualHost>
+
+#I can see the RoR splashpage fine, and I know the app works 
+#in webrick. Instead of the splashpage, I want to see the app run!
+#instead of public/index.html, how do I get it to use the index in my main
+#controller?
